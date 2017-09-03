@@ -17,7 +17,7 @@ public class DO_Players extends DO_BasePage {
     protected WebElement firstTeamLink;
     protected WebElement youthTeamLink;
 
-    protected AppConfig apconfig = new AppConfig("C:\\Automation\\deleteThis\\app.properties");
+    protected AppConfig apconfig = new AppConfig(".\\app.properties");
 
     protected DO_Navigation_Menu menu;
 

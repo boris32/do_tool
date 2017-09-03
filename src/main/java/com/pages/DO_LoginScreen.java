@@ -34,10 +34,10 @@ public class DO_LoginScreen extends DO_BasePage {
 
     public void logInAsDefaultUser ()
     {
-        //AppConfig apconfig = new AppConfig("C:\\Automation\\deleteThis\\local-app.properties");
-        AppConfig apconfig = new AppConfig (".\\local-app.properties");
-        enterUsername(apconfig.readProperty("username"));
-        enterPassword(apconfig.readProperty("password"));
+        AppConfig apconfig = new AppConfig(".\\app.properties");
+        AppConfig localapconfig = new AppConfig (".\\local-app.properties");
+        enterUsername(localapconfig.readProperty("username"));
+        enterPassword(localapconfig.readProperty("password"));
         clickOnLogin();
     }
 
